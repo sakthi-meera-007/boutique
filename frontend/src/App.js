@@ -19,7 +19,7 @@ function App() {
     fetchProducts();
     loadCart();
   }, []);
-
+//sonar test change
   const fetchProducts = async () => {
     const res = await fetch(API_URL);
     const data = await res.json();
