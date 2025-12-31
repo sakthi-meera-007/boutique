@@ -1,0 +1,31 @@
+### GET all products
+GET http://localhost:8080/api/products
+Accept: application/json
+
+
+### CREATE product
+POST http://localhost:8080/api/products
+Content-Type: application/json
+
+{
+  "name": "crop top",
+  "price": 450,
+  "stock": 20,
+  "category": "party wear"
+}
+
+
+### UPDATE product
+PUT http://localhost:8080/api/products/69428fae03ca4975acd5f1fe
+Content-Type: application/json
+
+{
+  "name": "crop top updated",
+  "price": 499,
+  "stock": 15,
+  "category": "party wear"
+}
+
+
+### DELETE product
+DELETE http://localhost:8080/api/products/6942902003ca4975acd5f1ff
